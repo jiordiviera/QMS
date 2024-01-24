@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed069504-10f2-4160-8039-1c8b4e1a686c" name="Changes" comment="Ceci est la première version de QMS" />
+    <list default="true" id="ed069504-10f2-4160-8039-1c8b4e1a686c" name="Changes" comment="Ceci est la première version de QMS">
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,23 +84,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Sites/PHP/Prestation entreprise",
+    "last_opened_file_path": "D:/Sites/PHP/Dashboard",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "proofread",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Sites\PHP\Prestation entreprise" />
+      <recent name="D:\Sites\PHP\Prestation entreprise\views" />
       <recent name="D:\Sites\PHP\Prestation entreprise\public" />
       <recent name="D:\Sites\PHP\Prestation entreprise\assets" />
       <recent name="D:\Sites\PHP\Prestation entreprise\src\components" />
-      <recent name="D:\Sites\PHP\Prestation entreprise\src" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -122,7 +129,7 @@
       <workItem from="1705930016945" duration="1409000" />
       <workItem from="1705999644274" duration="2518000" />
       <workItem from="1706016611431" duration="1477000" />
-      <workItem from="1706020595317" duration="333000" />
+      <workItem from="1706020595317" duration="7710000" />
     </task>
     <task id="LOCAL-00001" summary="Ceci est la première version de QMS">
       <option name="closed" value="true" />
@@ -156,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706020840420</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ceci est la première version de QMS">
+      <option name="closed" value="true" />
+      <created>1706020959504</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706020959504</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,5 +191,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ceci est la première version de QMS" />
     <option name="LAST_COMMIT_MESSAGE" value="Ceci est la première version de QMS" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

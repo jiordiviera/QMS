@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,7 +10,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-        <link href="../public/logo/logo1.png" rel="icon">
+    <link href="../public/logo/logo1.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +42,7 @@ if (!defined('INCLUDED_BY_ROUTER')) {
 }
 
 // Le reste du contenu de la page
-*/?>
+*/ ?>
 
 <!-- Spinner Start -->
 <div id="spinner"
@@ -56,11 +57,13 @@ if (!defined('INCLUDED_BY_ROUTER')) {
     <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
         <div class="col-lg-6 px-5 text-start">
             <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Douala, Cameroun, Afrique</small>
-            <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00  - 20.00 </small>
+            <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 - 20.00 </small>
         </div>
         <div class="col-lg-6 px-5 text-end">
-            <small><i class="fa fa-envelope text-primary me-2"></i><a href="mailto:Contact@QMSconsulting.com" title="Contact@QMSconsulting.com">Contact@QMSconsulting.com</a></small>
-            <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i><a href="tel:237683447200">+237 683 447 200</a></small>
+            <small><i class="fa fa-envelope text-primary me-2"></i><a href="mailto:Contact@QMSconsulting.com"
+                                                                      title="Contact@QMSconsulting.com">Contact@QMSconsulting.com</a></small>
+            <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i><a href="tel:237683447200">+237 683 447
+                    200</a></small>
         </div>
     </div>
 

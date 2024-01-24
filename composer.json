@@ -12,5 +12,11 @@
       "Controllers\\": "Controllers/",
       "Source\\": "src/"
     }
+  },
+  "extra": {
+    "rewrite-rules": {
+      "views/.*": "/views/404.view.php"
+    }
   }
+
 }
