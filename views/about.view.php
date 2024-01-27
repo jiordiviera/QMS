@@ -190,7 +190,7 @@ include "./include/header.php";
                     <div class="team-item">
                         <img class="img-fluid rounded" src="../public/img/team-1.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Kate Winslet</h4>
+                            <h4 class="mb-0">Kamdem celestin</h4>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle mx-1" href=""><i
                                             class="fab fa-facebook-f"></i></a>
@@ -205,7 +205,7 @@ include "./include/header.php";
                     <div class="team-item">
                         <img class="img-fluid rounded" src="../public/img/team-2.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Jac Jacson</h4>
+                            <h4 class="mb-0">Bobda junior</h4>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle mx-1" href=""><i
                                             class="fab fa-facebook-f"></i></a>
@@ -220,7 +220,7 @@ include "./include/header.php";
                     <div class="team-item">
                         <img class="img-fluid rounded" src="../public/img/team-3.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
+                            <h4 class="mb-0">TIDO Ryan</h4>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle mx-1" href=""><i
                                             class="fab fa-facebook-f"></i></a>

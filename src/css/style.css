@@ -221,6 +221,12 @@ h6,
     background: url(../../public/img/header.jpg) top left no-repeat;
     background-size: cover;
 }
+.page-header.notFound{
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    background: url(../../public/img/error.jpg) top left no-repeat;
+    background-size: cover;
+}
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
@@ -437,6 +443,7 @@ h6,
 .testimonial-item .testimonial-text {
     position: relative;
     text-align: center;
+    border: 1px solid #4c54f3;
 }
 
 .testimonial-item .testimonial-text .btn-square {
@@ -464,8 +471,8 @@ h6,
     bottom: -59px;
     left: 50%;
     transform: translateX(-50%);
-    border: 30px solid;
-    border-color: #FFFFFF transparent transparent transparent;
+    border: 30px solid ;
+    border-color: #4c54f3 transparent transparent transparent;
 }
 
 .testimonial-carousel .owl-item img {

@@ -1,5 +1,6 @@
 <?php
 
+
 // Définir une constante pour empêcher l'accès direct aux fichiers
 define('ACCESS', true);
 /*
@@ -36,10 +37,10 @@ $router->map('GET', '/', function () {
     require VIEW_PATH . '/home.view.php';
 }, 'home');
 
-$router->map('GET', '/home', function () {
+/*$router->map('GET', '/home', function () {
     $mailURL = $GLOBALS['router']->generate('mail');
-    require VIEW_PATH . '/accueil.view.php';
-}, 'mail');
+    require VIEW_PATH . '/home.view.php';
+}, 'mail');*/
 
 $router->map('GET', '/contact', function () {
     $contactURL = $GLOBALS['router']->generate('contact');
@@ -76,13 +77,8 @@ if ($match && in_array($match['name'], ['home', 'contact', 'about', 'service', '
 
 } else if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Débogage : afficher les données du formulaire
-    /* echo '<pre>';
-     print_r($_POST);
-     echo '</pre>';*/
 
-    // Rediriger ou afficher un message de confirmation si nécessaire
-//    header('Location: ' . $router->generate('home'));
-    exit();
+  include './include/controller.php';
 } else {
     // header("HTTP/1.0 404 Not Found");
 

@@ -27,14 +27,13 @@
                 <a class="btn btn-link" href="<?= URL ?>contact">Contact</a>
                 <a class="btn btn-link" href="<?= URL ?>service">Nos services</a>
                 <a class="btn btn-link" href="<?= URL ?>">Conditions générales</a>
-                <a class="btn btn-link" href="<?= URL ?>">Support</a>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-white mb-4">Newsletter</h4>
                 <p>Souscrire à la newletter</p>
                 <form id="newsletterForm" class="position-relative w-100" method="post" action="http://localhost:8000">
                     <input type="email" class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" id="email"
-                           name="email" placeholder="Entrez votre adresse email" required>
+                           name="email" placeholder="Votre adresse mail" required>
                     <button type="submit"
                             class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">S'abonner
                     </button>
@@ -54,7 +53,7 @@
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 copyright" id="copyright">
                 <script>
                     document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-                </script> &copy; <a class="border-bottom" href="<?= URL ?>">QMS</a>, Tous droits réservés.
+                </script>  &copy; <a class="border-bottom" href="<?= URL ?>">QMS</a>, Tous droits réservés.
             </div>
         </div>
     </div>
@@ -69,8 +68,9 @@
 
 <!-- JavaScript Libraries -->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 
@@ -92,8 +92,8 @@
                 },
                 phone: {
                     required: true,
-                    minlength: 10,
-                    maxlength: 10,
+                    minlength: 9,
+                    maxlength: 9,
                     number: true
                 },
                 subject: {
@@ -107,13 +107,13 @@
             messages: {
                 name: "Veuillez indiquer votre nom.",
                 email: {
-                    required: "Veuillez saisir votre adresse e-mail",
-                    minlength: "Veuillez saisir une adresse e-mail valide"
+                    required: "Adresse mail vide",
+                    minlength: "Adresse mail nom valide"
                 },
                 phone: {
-                    required: "Veuillez fournir un numéro de téléphone",
-                    minlength: "Le numéro de téléphone doit comporter au moins 10 caractères",
-                    maxlength: "Le numéro de téléphone ne doit pas comporter plus de 10 caractères."
+                    required: "Numéro de téléphone vide",
+                    minlength: "Doit comporter au moins 9 caractères",
+                    maxlength: "Ne doit pas comporter plus de 9 caractères."
                 },
                 subject: "Veuillez saisir le sujet",
                 message: "Merci de saisir votre message"

@@ -5,28 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed069504-10f2-4160-8039-1c8b4e1a686c" name="Changes" comment="Apres plusieurs essais, le problème des routes a été résolu">
-      <change afterPath="$PROJECT_DIR$/include/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/include/sendMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Router/Router.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Router/index.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/about.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/carousel-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/carousel-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/carousel-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/carousel-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/service-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/service-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/service-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/service-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/service-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/team-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/team-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/team-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/team-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/team-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/team-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/testimonial-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/testimonial-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/testimonial-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/testimonial-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/testimonial-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/testimonial-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/testimonial-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/testimonial-4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/404.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/404.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/about.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/contact.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/feature.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/project.view.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/service.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/service.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/testimonial.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/team.view.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +98,9 @@
       <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -99,12 +112,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JavaScript Debug.index.php.executor": "Debug",
-    "PHP Script.index.php.executor": "Debug",
+    "JavaScript Debug.index.php.executor": "Run",
+    "PHP Script.home.view.php.executor": "Debug",
+    "PHP Script.index.php.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/jiord/Bureau/Ajax",
+    "last_opened_file_path": "D:/Sites/PHP/Biblio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -112,6 +126,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "proofread",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -126,7 +145,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
       </set>
     </attachedChunks>
   </component>
@@ -159,7 +178,10 @@
       <workItem from="1706278390912" duration="3639000" />
       <workItem from="1706290874517" duration="1099000" />
       <workItem from="1706292988087" duration="1713000" />
-      <workItem from="1706295660625" duration="7787000" />
+      <workItem from="1706295660625" duration="9703000" />
+      <workItem from="1706550060627" duration="5376000" />
+      <workItem from="1706611334266" duration="36000" />
+      <workItem from="1706684191081" duration="17655000" />
     </task>
     <task id="LOCAL-00001" summary="Ceci est la première version de QMS">
       <option name="closed" value="true" />
@@ -209,7 +231,31 @@
       <option name="project" value="LOCAL" />
       <updated>1706079828183</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Apres plusieurs essais, le problème des routes a été résolu">
+      <option name="closed" value="true" />
+      <created>1706349935895</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706349935896</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Apres plusieurs essais, le problème des routes a été résolu">
+      <option name="closed" value="true" />
+      <created>1706350201100</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706350201100</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Apres plusieurs essais, le problème des routes a été résolu">
+      <option name="closed" value="true" />
+      <created>1706350380663</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706350380663</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +276,22 @@
     <MESSAGE value="Ceci est la première version de QMS" />
     <MESSAGE value="Apres plusieurs essais, le problème des routes a été résolu" />
     <option name="LAST_COMMIT_MESSAGE" value="Apres plusieurs essais, le problème des routes a été résolu" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/views/home.view.php</url>
+          <line>435</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/include/controller.php</url>
+          <line>75</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
