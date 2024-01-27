@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Détection du protocole (http ou https)
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 
@@ -11,7 +12,7 @@ define("URL", "$protocol://$host/");
     header("Location: " . URL . 'error');
     exit();
 }
-*/?>
+*/ ?>
 <?php
 
 $index = true;
@@ -47,7 +48,7 @@ include "./include/header.php";
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
-                                <div class="col-lg-7">
+                                <div class="col-lg-8">
                                     <p
                                             class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                                         Bienvenue à QMS</p>
@@ -235,9 +236,9 @@ include "./include/header.php";
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                                     <div class="feature-box border rounded p-4">
                                         <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">Exécutions rapides</h4>
-                                        <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
-                                            justo erat amet</p>
+                                        <h4 class="mb-3">Engagement envers l'excellence</h4>
+                                        <p class="mb-3">Notre équipe vise l'excellence opérationnelle.
+                                             Démarquez-vous grâce à la conformité ISO.</p>
                                         <a class="fw-semi-bold" href="<?= URL ?>service">En savoir plus <i
                                                     class="fa fa-arrow-right ms-1"></i></a>
                                     </div>
@@ -245,9 +246,9 @@ include "./include/header.php";
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                                     <div class="feature-box border rounded p-4">
                                         <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">Guide et soutien</h4>
-                                        <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
-                                            justo erat amet</p>
+                                        <h4 class="mb-3">Engagement envers l'excellence</h4>
+                                        <p class="mb-3"> Besoins uniques, solutions sur mesure.
+                                            Collaboration étroite pour des résultats précis.</p>
                                         <a class="fw-semi-bold" href="<?= URL ?>service">En savoir plus <i
                                                     class="fa fa-arrow-right ms-1"></i></a>
                                     </div>
@@ -257,9 +258,9 @@ include "./include/header.php";
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
                             <div class="feature-box border rounded p-4">
                                 <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">Sécurité financière</h4>
-                                <p class="mb-3">Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
-                                    erat amet</p>
+                                <h4 class="mb-3">Approche personnalisée </h4>
+                                <p class="mb-3">  Engagés pour des résultats mesurables.
+                                    Amélioration notable de processus, sécurité, conformité, réputation.</p>
                                 <a class="fw-semi-bold" href="<?= URL ?>service">En savoir plus<i
                                             class="fa fa-arrow-right ms-1"></i></a>
                             </div>
@@ -276,27 +277,27 @@ include "./include/header.php";
     <div class="container-xxl service py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Nos Services</p>
-                <h1 class="display-5 mb-5">Des services géniaux pour les entreprises</h1>
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Nos services</p>
+                <h1 class="display-5 mb-5">Des services géniaux pour votre entreprise</h1>
             </div>
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4">
                     <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
                                 data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Plannification efficace</h5>
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>ISO 9001-2015</h5>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
                                 data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Cash Investment</h5>
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>ISO 22000-2018</h5>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
                                 data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Consultation gratuite</h5>
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>ISO 45001-2018</h5>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
                                 data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Business Loans</h5>
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>ISO 27001-2022</h5>
                         </button>
                     </div>
                 </div>
@@ -312,14 +313,19 @@ include "./include/header.php";
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
+                                    <h3 class="mb-4">Excellence dans la qualité des prestations</h3>
+                                    <p class="mb-4">La norme ISO 9001:2015 est un standard international pour les
+                                        systèmes de gestion de la qualité. Elle aide les entreprises à garantir la
+                                        satisfaction client, à améliorer en continu et à assurer la conformité
+                                        réglementaire.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Amélioration de la satisfaction
+                                        client.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Optimisation des processus internes.
+                                    </p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Accroissement de la crédibilité et
+                                        de la réputation de l'entreprise.</p>
+                                    <a href="https://www.iso.org/fr/standard/62085.html"
+                                       class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -333,14 +339,19 @@ include "./include/header.php";
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
+                                    <h3 class="mb-4">Sécurité alimentaire assurée, normes rigoureuses</h3>
+                                    <p class="mb-4"> Il établit des exigences pour un système de management
+                                        de la sécurité des denrées alimentaires dans toute la chaîne
+                                        d'approvisionnement. Cela assure la sécurité des produits alimentaires de la
+                                        ferme à la table.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Garantie de la sécurité alimentaire.
+                                    </p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Conformité aux réglementations
+                                        internationales.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Renforcement de la confiance des
+                                        consommateurs.</p>
+                                    <a href="https://www.iso.org/fr/publication/PUB100454.html"
+                                       class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -354,14 +365,18 @@ include "./include/header.php";
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
+                                    <h3 class="mb-4">Santé et sécurité au travail prioritaires</h3>
+                                    <p class="mb-4">Il est un standard pour les systèmes de management de la sécurité de
+                                        l'information. Il aide les organisations à protéger leurs informations contre
+                                        les menaces telles que le vol, la perte ou la divulgation non autorisée.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Réduction des accidents et des
+                                        risques professionnels.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Amélioration du bien-être des
+                                        employés.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Diminution des coûts liés aux
+                                        accidents du travail.</p>
+                                    <a href="https://www.iso.org/fr/standard/63787.html"
+                                       class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -375,14 +390,19 @@ include "./include/header.php";
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
+                                    <h3 class="mb-4">Protection robuste de l'information</h3>
+                                    <p class="mb-4">Il est un standard pour les systèmes de management de la
+                                        sécurité de l'information. Il aide les organisations à protéger leurs
+                                        informations contre les menaces telles que le vol, la perte ou la divulgation
+                                        non autorisée.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Protection renforcée des données
+                                        sensibles.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Réduction des risques de
+                                        cyberattaques.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Conformité aux exigences légales en
+                                        matière de protection des données.</p>
+                                    <a href="https://www.iso.org/fr/standard/27001"
+                                       class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -393,9 +413,16 @@ include "./include/header.php";
     </div>
     <!-- Service End -->
 
+<?php if (isset($_SESSION['response'])){
 
+    ?>
+    <div class="alert text-center <?= $_SESSION['response']['status']; ?>" role="alert">
+        <?= $_SESSION['response']['message']; ?>
+    </div>
+
+<?php }?>
     <!-- Callback Start -->
-    <div class="container-fluid callback my-5 pt-5">
+    <div class="container-fluid callback my-5 pt-5" id="form">
         <div class="container pt-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
@@ -406,8 +433,8 @@ include "./include/header.php";
                             <h1 class="display-5 mb-5">Demander un rappel</h1>
                         </div>
 
-                        <?php
-                        include('./include/database.php');
+                      <!--  --><?php
+/*                        include('./include/database.php');
 
                         use PHPMailer\PHPMailer\PHPMailer;
                         use PHPMailer\PHPMailer\Exception;
@@ -466,14 +493,16 @@ include "./include/header.php";
                                 );
                             }
                         }
-                        ?>
+                        */?>
+
+
                         <!-- Message -->
                         <?php if (!empty($response)) { ?>
                             <div class="alert text-center <?php echo $response['status']; ?>" role="alert">
                                 <?php echo $response['message']; ?>
                             </div>
                         <?php } ?>
-                        <form class="row g-3" action="" method="post" id="ContactForm" name="contactForm" enctype="multipart/form-data">
+                        <form class="row g-5" method="post" name="contactForm" enctype="multipart/form-data">
 
                             <div class="col-sm-6">
                                 <div class="form-floating">
@@ -499,7 +528,7 @@ include "./include/header.php";
                             <div class="col-sm-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="subject" name="subject"
-                                           placeholder="Sujet" >
+                                           placeholder="Sujet">
                                     <label for="subject">Sujet</label>
                                 </div>
                             </div>
@@ -523,7 +552,6 @@ include "./include/header.php";
     <!-- Callback End -->
 
 
-
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -536,12 +564,13 @@ include "./include/header.php";
                     <div class="team-item">
                         <img class="img-fluid rounded" src="../public/img/team-1.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Kate Winslet</h4>
+                            <h4 class="mb-0">Kamdem celestin</h4>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.facebook.com/"><i
                                             class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.twitter.com/"><i
+                                            class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.instagram.com/"><i
                                             class="fab fa-instagram"></i></a>
                             </div>
                         </div>
@@ -551,12 +580,13 @@ include "./include/header.php";
                     <div class="team-item">
                         <img class="img-fluid rounded" src="../public/img/team-2.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Jac Jacson</h4>
+                            <h4 class="mb-0">Minka</h4>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.facebook.com/"><i
                                             class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.twitter.com/"><i
+                                            class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.instagram.com/"><i
                                             class="fab fa-instagram"></i></a>
                             </div>
                         </div>
@@ -566,12 +596,13 @@ include "./include/header.php";
                     <div class="team-item">
                         <img class="img-fluid rounded" src="../public/img/team-3.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
+                            <h4 class="mb-0">TIDO Ryan</h4>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.facebook.com/"><i
                                             class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle mx-1" href=""><i
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.twitter.com/"><i
+                                            class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square rounded-circle mx-1" href="https://www.instagram.com"><i
                                             class="fab fa-instagram"></i></a>
                             </div>
                         </div>
@@ -592,52 +623,57 @@ include "./include/header.php";
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
                 <div class="testimonial-item">
-                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-                        <div class="btn-square bg-white border rounded-circle">
+                    <div class="testimonial-text  rounded p-4 pt-5 mb-5">
+                        <div class="btn-square bg-white  rounded-circle">
                             <i class="fa fa-quote-right fa-2x text-primary"></i>
                         </div>
-                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                        lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                        Je tiens à exprimer ma gratitude envers l'équipe de QMS pour leur
+                        expertise exceptionnelle dans la mise en œuvre de la norme ISO 22000. Leur soutien précieux et
+                        leurs conseils personnalisés ont été cruciaux pour garantir la sécurité alimentaire de notre
+                        entreprise.
                     </div>
                     <img class="rounded-circle mb-3" src="../public/img/testimonial-1.jpg" alt="">
-                    <h4>Nom Client</h4>
-                    <span>Profession</span>
+                    <h4>Témoignage de Jeanne</h4>
+                    <span> Directrice Qualité d'une entreprise agroalimentaire</span>
                 </div>
                 <div class="testimonial-item">
-                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-                        <div class="btn-square bg-white border rounded-circle">
+                    <div class="testimonial-text  rounded p-4 pt-5 mb-5">
+                        <div class="btn-square bg-white  rounded-circle">
                             <i class="fa fa-quote-right fa-2x text-primary"></i>
                         </div>
-                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                        lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                        Je recommande vivement QMS pour leur assistance professionnelle dans
+                        l'implémentation de la norme ISO 45001. Leur approche proactive et leur engagement envers la
+                        sécurité et la santé au travail ont considérablement amélioré notre environnement de travail
                     </div>
                     <img class="rounded-circle mb-3" src="../public/img/testimonial-2.jpg" alt="">
-                    <h4>Nom Client</h4>
-                    <span>Profession</span>
+                    <h4>Témoignage de Ahmed</h4>
+                    <span> Responsable RH dans une entreprise industrielle</span>
                 </div>
                 <div class="testimonial-item">
-                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-                        <div class="btn-square bg-white border rounded-circle">
+                    <div class="testimonial-text  rounded p-4 pt-5 mb-5">
+                        <div class="btn-square bg-white  rounded-circle">
                             <i class="fa fa-quote-right fa-2x text-primary"></i>
                         </div>
-                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                        lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                        Un grand merci à l'équipe de QMS pour leur expertise en sécurité de
+                        l'information. Leur accompagnement dans l'obtention de la certification ISO 27001 a renforcé la
+                        confiance de nos clients et a amélioré notre posture en matière de cybersécurité.
                     </div>
                     <img class="rounded-circle mb-3" src="../public/img/testimonial-3.jpg" alt="">
-                    <h4>Nom Client</h4>
-                    <span>Profession</span>
+                    <h4>Témoignage de Marie</h4>
+                    <span>Responsable Informatique d'une entreprise de services</span>
                 </div>
                 <div class="testimonial-item">
-                    <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-                        <div class="btn-square bg-white border rounded-circle">
+                    <div class="testimonial-text  rounded p-4 pt-5 mb-5">
+                        <div class="btn-square bg-white  rounded-circle">
                             <i class="fa fa-quote-right fa-2x text-primary"></i>
                         </div>
-                        Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem
-                        lorem magna ut et, nonumy et labore et tempor diam tempor erat.
+                        Nous sommes reconnaissants envers QMS pour leur soutien inestimable dans
+                        la mise en place de la norme ISO 9001. Leur approche collaborative et leur engagement envers
+                        l'excellence ont considérablement amélioré nos processus et notre efficacité opérationnelle.
                     </div>
                     <img class="rounded-circle mb-3" src="../public/img/testimonial-4.jpg" alt="">
-                    <h4>Nom Client</h4>
-                    <span>Profession</span>
+                    <h4>Témoignage de Thomas</h4>
+                    <span> Directeur Opérationnel d'une entreprise de fabrication</span>
                 </div>
             </div>
         </div>
@@ -647,3 +683,5 @@ include "./include/header.php";
 
     <!-- Footer Start -->
 <?php include "./include/footer.php";
+?>
+

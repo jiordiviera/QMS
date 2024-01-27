@@ -8,7 +8,7 @@ $host = $_SERVER['HTTP_HOST'];
 define("URL", "$protocol://$host/");
 if (!defined('ACCESS')) {
     // Redirection ou affichage d'une erreur
-    header("Location: ".URL.'error');
+    header("Location: " . URL . 'error');
     exit();
 }
 ?>
@@ -25,7 +25,7 @@ include "./include/header.php";
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="<?= URL ?>">Accueil</a></li>
-<!--                    <li class="breadcrumb-item"><a href="#">Pages</a></li>-->
+                    <!--                    <li class="breadcrumb-item"><a href="#">Pages</a></li>-->
                     <li class="breadcrumb-item active" aria-current="page">Services</li>
                 </ol>
             </nav>
@@ -38,27 +38,27 @@ include "./include/header.php";
     <div class="container-xxl service py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
-                <h1 class="display-5 mb-5">Des services géniaux pour les entreprises</h1>
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Nos services</p>
+                <h1 class="display-5 mb-5">Des services géniaux pour votre entreprise</h1>
             </div>
             <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4">
                     <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Plannification</h5>
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>ISO 9001-2015</h5>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Cash Investment</h5>
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>ISO 22000-2018</h5>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Consultation gratuite</h5>
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>ISO 45001-2018</h5>
                         </button>
                         <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>Business Loans</h5>
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>ISO 27001-2022</h5>
                         </button>
                     </div>
                 </div>
@@ -68,19 +68,22 @@ include "./include/header.php";
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="../public/img/service-1.jpg"
-                                            style="object-fit: cover;" alt="">
+                                        <img class="position-absolute rounded w-100 h-100"
+                                             src="../public/img/service-1.jpg"
+                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
+                                    <h3 class="mb-4">Excellence dans la qualité des prestations</h3>
+                                    <p class="mb-4">La norme ISO 9001:2015 est un standard international pour les
+                                        systèmes de gestion de la qualité. Elle aide les entreprises à garantir la
+                                        satisfaction client, à améliorer en continu et à assurer la conformité
+                                        réglementaire.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Amélioration de la satisfaction client.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Optimisation des processus internes.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Accroissement de la crédibilité et de la réputation de l'entreprise.</p>
+                                    <a href="https://www.iso.org/fr/standard/62085.html"
+                                       class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -88,19 +91,22 @@ include "./include/header.php";
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="../public/img/service-2.jpg"
-                                            style="object-fit: cover;" alt="">
+                                        <img class="position-absolute rounded w-100 h-100"
+                                             src="../public/img/service-2.jpg"
+                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
+                                    <h3 class="mb-4">Sécurité alimentaire assurée, normes rigoureuses</h3>
+                                    <p class="mb-4"> Il établit des exigences pour un système de management
+                                        de la sécurité des denrées alimentaires dans toute la chaîne
+                                        d'approvisionnement. Cela assure la sécurité des produits alimentaires de la
+                                        ferme à la table.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Garantie de la sécurité alimentaire.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Conformité aux réglementations internationales.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Renforcement de la confiance des consommateurs.</p>
+                                    <a href="https://www.iso.org/fr/publication/PUB100454.html"
+                                       class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -108,19 +114,21 @@ include "./include/header.php";
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="../public/img/service-3.jpg"
-                                            style="object-fit: cover;" alt="">
+                                        <img class="position-absolute rounded w-100 h-100"
+                                             src="../public/img/service-3.jpg"
+                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
+                                    <h3 class="mb-4">Santé et sécurité au travail prioritaires</h3>
+                                    <p class="mb-4">Il est un standard pour les systèmes de management de la sécurité de
+                                        l'information. Il aide les organisations à protéger leurs informations contre
+                                        les menaces telles que le vol, la perte ou la divulgation non autorisée.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Réduction des accidents et des risques professionnels.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Amélioration du bien-être des employés.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Diminution des coûts liés aux accidents du travail.</p>
+                                    <a href="https://www.iso.org/fr/standard/63787.html"
+                                       class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -128,19 +136,22 @@ include "./include/header.php";
                             <div class="row g-4">
                                 <div class="col-md-6" style="min-height: 350px;">
                                     <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="../public/img/service-4.jpg"
-                                            style="object-fit: cover;" alt="">
+                                        <img class="position-absolute rounded w-100 h-100"
+                                             src="../public/img/service-4.jpg"
+                                             style="object-fit: cover;" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-4">25 Years Of Experience In Financial Support</h3>
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit
-                                        clita duo justo erat amet.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secured Loans</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Credit Facilities</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Cash Advanced</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
+                                    <h3 class="mb-4">Protection robuste de l'information</h3>
+                                    <p class="mb-4">Il est un standard pour les systèmes de management de la
+                                        sécurité de l'information. Il aide les organisations à protéger leurs
+                                        informations contre les menaces telles que le vol, la perte ou la divulgation
+                                        non autorisée.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Protection renforcée des données sensibles.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Réduction des risques de cyberattaques.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Conformité aux exigences légales en matière de protection des données.</p>
+                                    <a href="https://www.iso.org/fr/standard/27001"
+                                       class="btn btn-primary py-3 px-5 mt-3">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -152,59 +163,7 @@ include "./include/header.php";
     <!-- Service End -->
 
 
-    <!-- Callback Start -->
-    <div class="container-fluid callback mt-5 py-5">
-        <div class="container pt-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contactez nous
-                            </p>
-                            <h1 class="display-5 mb-5">Demander un rappel</h1>
-                        </div>
-                        <form class="row g-3" method="">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Votre Nom">
-                                    <label for="name">Nom</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="mail" placeholder="Entrez votre adresse email">
-                                    <label for="mail">Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="mobile" placeholder="Entrez votre numéro de téléphone">
-                                    <label for="mobile">Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Sujet">
-                                    <label for="subject">Sujet</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Ecrivez votre message ici" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Envoyer</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Callback End -->
+
 
 
     <!-- Footer Start -->

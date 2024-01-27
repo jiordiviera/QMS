@@ -1,0 +1,22 @@
+Index: Controllers/index.php
+===================================================================
+diff --git a/Controllers/index.php b/Controllers/index.php
+deleted file mode 100644
+--- a/Controllers/index.php	(revision b1bd97cc635bd7773f0690b7ab21033e6b26412b)
++++ /dev/null	(revision b1bd97cc635bd7773f0690b7ab21033e6b26412b)
+@@ -1,14 +0,0 @@
+-<?php
+-// Détection du protocole (http ou https)
+-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+-
+-// Nom de l'hôte (domaine)
+-$host = $_SERVER['HTTP_HOST'];
+-
+-define("URL", "$protocol://$host/");
+-if (!defined('ACCESS')) {
+-    // Redirection ou affichage d'une erreur
+-    header("Location: ".URL.'error');
+-    exit();
+-}
+-?>
+\ No newline at end of file
