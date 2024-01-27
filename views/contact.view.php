@@ -44,9 +44,6 @@ include "./include/header.php";
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contact</p>
                     <h1 class="display-5 mb-4">Si vous avez des questions, veuillez nous contacter</h1>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form
-                        with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
-                        done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
                     <form method="post" action="jiordikengne@gmail.com">
                         <div class="row g-3">
                             <div class="col-md-6">

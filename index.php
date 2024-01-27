@@ -2,12 +2,12 @@
 
 // Définir une constante pour empêcher l'accès direct aux fichiers
 define('ACCESS', true);
-
+/*
 // Vérification pour empêcher l'accès au dossier du projet
 if (defined('ACCESS') && ACCESS === true && $_SERVER['REQUEST_URI'] !== '/' && file_exists(__DIR__ . $_SERVER['REQUEST_URI'])) {
 //    require '../views/404.view.php';
     exit('404 Not Found');
-}
+}*/
 
 
 // Détection du protocole (http ou https)
@@ -35,6 +35,11 @@ $router->map('GET', '/', function () {
     $homeURL = $GLOBALS['router']->generate('home');
     require VIEW_PATH . '/home.view.php';
 }, 'home');
+
+$router->map('GET', '/home', function () {
+    $mailURL = $GLOBALS['router']->generate('mail');
+    require VIEW_PATH . '/accueil.view.php';
+}, 'mail');
 
 $router->map('GET', '/contact', function () {
     $contactURL = $GLOBALS['router']->generate('contact');
@@ -64,9 +69,27 @@ $router->map('GET', '/[*:any]', function () {
 
 $match = $router->match();
 
-if ($match && in_array($match['name'], ['home', 'contact', 'about', 'service', '404'])) {
+
+if ($match && in_array($match['name'], ['home', 'contact', 'about', 'service', '404', ''])) {
     $match['target']();
+    exit();
+
+} else if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Débogage : afficher les données du formulaire
+    /* echo '<pre>';
+     print_r($_POST);
+     echo '</pre>';*/
+
+    // Rediriger ou afficher un message de confirmation si nécessaire
+//    header('Location: ' . $router->generate('home'));
+    exit();
 } else {
-//    header("HTTP/1.0 404 Not Found");
+    // header("HTTP/1.0 404 Not Found");
+
     require VIEW_PATH . '/404.view.php';
 }
+
+// Le reste du code ici
+
+// ... (votre logique d'acheminement)
+

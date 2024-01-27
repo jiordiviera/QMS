@@ -22,6 +22,7 @@ class ComposerStaticInitc2542a0f96c7c4f089345d10e50b9eeb
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'E' => 
         array (
@@ -50,6 +51,10 @@ class ComposerStaticInitc2542a0f96c7c4f089345d10e50b9eeb
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'Exceptions\\' => 
         array (

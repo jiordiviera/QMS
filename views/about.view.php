@@ -6,11 +6,11 @@ $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : '
 $host = $_SERVER['HTTP_HOST'];
 
 define("URL", "$protocol://$host/");
-if (!defined('ACCESS')) {
+/*if (!defined('ACCESS')) {
     // Redirection ou affichage d'une erreur
-    header("Location: ".URL.'error');
+    header("Location: " . URL . 'error');
     exit();
-}
+}*/
 ?>
 <?php
 $about = true;
@@ -26,7 +26,7 @@ include "./include/header.php";
             <h1 class="display-3 mb-4 animated slideInDown">À propos </h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="<?= URL ?>">Accueil</a></li>
                     <!--                    <li class="breadcrumb-item"><a href="#">Pages</a></li>-->
                     <li class="breadcrumb-item active" aria-current="page">À propos</li>
                 </ol>
@@ -45,7 +45,7 @@ include "./include/header.php";
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">À propos de nous</p>
-                    <h1 class="display-5 mb-4">We Help Our Clients To Grow Their Business</h1>
+                    <h1 class="display-5 mb-4">Nous aidons nos clients à développer leurs activités</h1>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
                         eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
                     </p>
@@ -54,16 +54,16 @@ include "./include/header.php";
                             <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
                                 <button class="nav-link fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story"
-                                        aria-selected="true">Story
+                                        aria-selected="true">Notre histoire
                                 </button>
                                 <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-mission" type="button" role="tab"
                                         aria-controls="nav-mission"
-                                        aria-selected="false">Mission
+                                        aria-selected="false">Notre mission
                                 </button>
                                 <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab"
                                         data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision"
-                                        aria-selected="false">Vision
+                                        aria-selected="false">Notre vision
                                 </button>
                             </div>
                         </nav>
@@ -182,8 +182,8 @@ include "./include/header.php";
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
-                <h1 class="display-5 mb-5">Exclusive Team</h1>
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Notre équipe</p>
+                <h1 class="display-5 mb-5">Équipe exclusive</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">

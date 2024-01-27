@@ -10,6 +10,7 @@ return array(
     'Source\\' => array($baseDir . '/src'),
     'Router\\' => array($baseDir . '/Router'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
+    'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'Exceptions\\' => array($baseDir . '/Exceptions'),
     'Controllers\\' => array($baseDir . '/Controllers'),
     'Colors\\' => array($vendorDir . '/mistic100/randomcolor/src'),

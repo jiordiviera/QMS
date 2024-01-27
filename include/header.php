@@ -33,16 +33,7 @@
 </head>
 
 <body>
-<?php
-/*// Vérification pour bloquer l'accès direct
-if (!defined('INCLUDED_BY_ROUTER')) {
-    http_response_code(403);
-    echo '<h1>Accès interdit</h1>';
-    exit;
-}
 
-// Le reste du contenu de la page
-*/ ?>
 
 <!-- Spinner Start -->
 <div id="spinner"
@@ -62,8 +53,7 @@ if (!defined('INCLUDED_BY_ROUTER')) {
         <div class="col-lg-6 px-5 text-end">
             <small><i class="fa fa-envelope text-primary me-2"></i><a href="mailto:Contact@QMSconsulting.com"
                                                                       title="Contact@QMSconsulting.com">Contact@QMSconsulting.com</a></small>
-            <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i><a href="tel:237683447200">+237 683 447
-                    200</a></small>
+            <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i><a href="tel:237683447200">+237 683 447 200</a></small>
         </div>
     </div>
 
@@ -83,26 +73,17 @@ if (!defined('INCLUDED_BY_ROUTER')) {
                     propos</a>
                 <a href="<?= URL ?>service" class="nav-item nav-link <?php echo !empty($service) ? "active" : "" ?>">Nos
                     services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu border-light m-0">
-                        <a href="../views/project.view.php" class="dropdown-item">Projects</a>
-                        <a href="../views/feature.php" class="dropdown-item">Features</a>
-                        <a href="../views/team.view.php" class="dropdown-item">Team Member</a>
-                        <a href="../views/testimonial.php" class="dropdown-item">Testimonial</a>
-                        <!--                            <a href="404.html" class="dropdown-item">404 Page</a>-->
-                    </div>
-                </div>
+
                 <a href="<?= URL ?>contact" class="nav-item nav-link <?php echo !empty($contact) ? "active" : "" ?>">Contact</a>
             </div>
             <div class="d-none d-lg-flex ms-2">
-                <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/" target="blank">
                     <small class="fab fa-facebook-f text-primary"></small>
                 </a>
-                <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.twitter.com/" target="blank">
                     <small class="fab fa-twitter text-primary"></small>
                 </a>
-                <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+                <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://linkedin.com/" target="blank">
                     <small class="fab fa-linkedin-in text-primary"></small>
                 </a>
             </div>

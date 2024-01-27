@@ -2,7 +2,9 @@
   "require": {
     "mistic100/randomcolor": "^1.0.6",
     "filp/whoops": "^2.15",
-    "altorouter/altorouter": "^2.0"
+    "altorouter/altorouter": "^2.0",
+    "phpmailer/phpmailer": "^6.9",
+    "ext-pdo": "*"
   },
 
   "autoload": {
@@ -11,11 +13,6 @@
       "Exceptions\\": "Exceptions/",
       "Controllers\\": "Controllers/",
       "Source\\": "src/"
-    }
-  },
-  "extra": {
-    "rewrite-rules": {
-      "views/.*": "/views/404.view.php"
     }
   }
 
