@@ -44,7 +44,7 @@ include "./include/header.php";
         <?= $_SESSION['response']['message']; ?>
     </div>
 
-<?php }?>
+<?php unset($_SESSION['response']); }?>
     <!-- Contact Start -->
     <div class="container-xxl py-5" id="form">
         <div class="container">

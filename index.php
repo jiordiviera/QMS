@@ -57,6 +57,11 @@ $router->map('GET', '/service', function () {
     require VIEW_PATH . '/service.view.php';
 }, 'service');
 
+$router->map('GET', '/condition', function () {
+    $serviceURL = $GLOBALS['router']->generate('condition');
+    require VIEW_PATH . '/condition.view.php';
+}, 'condition');
+
 $router->map('GET', '/error', function () {
     $errorURL = $GLOBALS['router']->generate('error');
     require VIEW_PATH . '/404.view.php';
@@ -71,14 +76,16 @@ $router->map('GET', '/[*:any]', function () {
 $match = $router->match();
 
 
-if ($match && in_array($match['name'], ['home', 'contact', 'about', 'service', '404', ''])) {
+if ($match && in_array($match['name'], ['home', 'contact', 'about', 'service', '404', ''], true)) {
     $match['target']();
     exit();
 
-} else if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Débogage : afficher les données du formulaire
 
-  include './include/controller.php';
+    include './include/controller.php';
 } else {
     // header("HTTP/1.0 404 Not Found");
 

@@ -28,18 +28,31 @@
                 <a class="btn btn-link" href="<?= URL ?>service">Nos services</a>
                 <a class="btn btn-link" href="<?= URL ?>">Conditions générales</a>
             </div>
+
+            <!--           Début New letter-->
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-4">Newsletter</h4>
+
+                <h4 class="text-white mb-4">Souscrire à la newsletter</h4>
                 <p>Souscrire à la newletter</p>
-                <form id="newsletterForm" class="position-relative w-100" method="post" action="http://localhost:8000">
+                <!-- Message -->
+                <?php if (isset($_SESSION['response1'])) { ?>
+                    <div class="alert text-center <?= $_SESSION['response1']['status']; ?>" role="alert">
+                        <?= $_SESSION['response1']['message']; ?>
+                    </div>
+
+                    <?php unset($_SESSION['response']);
+                } ?>
+                <form id="newsletterForm" class="position-relative w-100" method="post">
                     <input type="email" class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" id="email"
-                           name="email" placeholder="Votre adresse mail" required>
+                           name="emailNew" placeholder="Adresse mail" required>
                     <button type="submit"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">S'abonner
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" name="newsletterForm">
+                        S'abonner
                     </button>
                 </form>
 
             </div>
+            <!--            Fin New letter-->
         </div>
     </div>
 </div>
@@ -53,7 +66,7 @@
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 copyright" id="copyright">
                 <script>
                     document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-                </script>  &copy; <a class="border-bottom" href="<?= URL ?>">QMS</a>, Tous droits réservés.
+                </script> &copy; <a class="border-bottom" href="<?= URL ?>">QMS</a>, Tous droits réservés.
             </div>
         </div>
     </div>
