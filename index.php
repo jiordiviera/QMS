@@ -1,6 +1,5 @@
 <?php
 
-
 // Définir une constante pour empêcher l'accès direct aux fichiers
 define('ACCESS', true);
 /*
